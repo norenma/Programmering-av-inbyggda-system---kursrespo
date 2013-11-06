@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Lab3
 ConfigurationName      :=Debug
-WorkspacePath          := "/Users/Markus/C-projects/Lektion1/Lab3"
-ProjectPath            := "/Users/Markus/C-projects/Lektion1/Lab3/Lab3"
+WorkspacePath          := "/Users/Markus/Programmering av inbyggda system - kursrespo/Lab3"
+ProjectPath            := "/Users/Markus/Programmering av inbyggda system - kursrespo/Lab3/Lab3"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Markus Andersson Noren
-Date                   :=2013-10-31
+Date                   :=2013-11-06
 CodeLitePath           :="/Users/Markus/Library/Application Support/codelite"
 LinkerName             :=gcc
 SharedObjectLinkerName :=gcc -dynamiclib -fPIC
@@ -88,7 +88,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/toText$(ObjectSuffix): toText.c $(IntermediateDirectory)/toText$(DependSuffix)
-	$(CC) $(SourceSwitch) "/Users/Markus/C-projects/Lektion1/Lab3/Lab3/toText.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/toText$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/Users/Markus/Programmering av inbyggda system - kursrespo/Lab3/Lab3/toText.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/toText$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/toText$(DependSuffix): toText.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/toText$(ObjectSuffix) -MF$(IntermediateDirectory)/toText$(DependSuffix) -MM "toText.c"
 
